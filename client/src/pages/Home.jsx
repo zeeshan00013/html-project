@@ -12,7 +12,7 @@ const Home = () => {
         FREE SHIPPING ON ORDERS $50+
       </div>
       <div className=" relative">
-        <div className="border border-black absolute w-full flex items-center font-quantico h-24">
+        <div className=" absolute w-full flex items-center font-quantico h-24">
           <div className="flex items-center w-full justify-between px-10">
             <div className="text-white font-bold flex justify-between gap-20  ">
               <p className="text-2xl"> SHOP</p>
