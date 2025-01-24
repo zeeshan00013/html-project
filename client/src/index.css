@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+  .stretched-text {
+  transform: scaleY(1.5); /* Stretches text by 150% */
+}
+
+    .ticker {
+        display: flex;
+        width: 100%;
+        display: inline-block; /* or block depending on your layout */
+
+        position: relative;
+        overflow: hidden; /* Prevent child elements from overflowing */
+
+      }
+      .ticker-text {
+        animation: tickerAnimation 15s linear infinite;
+      }
+      .ticker-track {
+        display: flex;
+        gap: 0; /* Ensures no gap between lines */
+        animation: tickerAnimation 15s linear infinite;
+      }
+
+
+
+
+      
+      @keyframes tickerAnimation {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+}
